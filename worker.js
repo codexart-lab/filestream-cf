@@ -294,7 +294,7 @@ async function onInline(event, inline) {
   let  fID; let fName; let fType; let fSize; let fLen;
 
   if (!PUBLIC_BOT && inline.from.id != BOT_OWNER) {
-    const buttons = [[{ text: "Source Code", url: "https://github.com/vauth/filestream-cf" }]];
+    const buttons = [[{ text: "Source Code", url: "https://github.com/codexart-lab/filestream-cf" }]];
     return await Bot.answerInlineArticle(inline.id, "Access forbidden", "Deploy your own filestream-cf.", "*❌ Access forbidden.*\n📡 Deploy your own [filestream-cf](https://github.com/vauth/filestream-cf) bot.", buttons)
   }
  
@@ -308,7 +308,7 @@ async function onInline(event, inline) {
   const data = await Bot.editMessage(channel_id, message_id, await UUID());
 
   if (data.error_code){
-    const buttons = [[{ text: "Source Code", url: "https://github.com/vauth/filestream-cf" }]];
+    const buttons = [[{ text: "Source Code", url: "https://github.com/codexart-lab/filestream-cf" }]];
     return await Bot.answerInlineArticle(inline.id, "Error", data.description, data.description, buttons)
   }
 
