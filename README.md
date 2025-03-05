@@ -38,7 +38,7 @@ const PUBLIC_BOT = false; // Make your bot public.
     - Upload `worker.js` into **Cloudflare**.
     - Modify the [variables](#-variables).
 - **Dynamic:**
-    - Generate the code using [code generator](https://vauth.github.io/filestream-cf/).
+    - Generate the code using [code generator](https://codexart-lab.github.io/filestream-cf/).
     - Copy paste the generated code to cloudflare workers.
 - Finally, **Deploy**.
 
